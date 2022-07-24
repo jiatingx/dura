@@ -12,3 +12,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.page{background-color: aqua;}
+</style>

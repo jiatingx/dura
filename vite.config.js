@@ -6,7 +6,8 @@ import legacy from "@vitejs/plugin-legacy"
 import Unocss from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import { ElementUiResolver } from "unplugin-vue-components/resolvers"
-import Layouts from "vite-plugin-vue-layouts"
+// import basicSsl from "@vitejs/plugin-basic-ssl"
+// import Layouts from "vite-plugin-vue-layouts"
 import path from "path"
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +21,8 @@ export default defineConfig({
       dirs: [{ dir: "src/views/pages", baseRoute: "" }],
       exclude: ["**/components/*.vue"],
     }),
-    Layouts(),
+    // basicSsl(),
+    // Layouts(),
     Components({
       resolvers: [ElementUiResolver()],
     }),
@@ -31,6 +33,7 @@ export default defineConfig({
   server: {
     open: true,
     host: "0.0.0.0",
+    // https: true,
     clearScreen: false,
     resolve: { alias: { "@": path.resolve(__dirname, "src") } },
     proxy: {
