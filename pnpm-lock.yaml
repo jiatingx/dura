@@ -12,6 +12,7 @@ specifiers:
   js-cookie: ^3.0.1
   lodash: ^4.17.21
   pinia: ^2.0.16
+  pinia-plugin-persistedstate: ^2.1.1
   qs: ^6.11.0
   sass: ^1.54.0
   terser: ^5.14.2
@@ -30,6 +31,7 @@ dependencies:
   js-cookie: 3.0.1
   lodash: 4.17.21
   pinia: 2.0.16_vue@2.7.8
+  pinia-plugin-persistedstate: 2.1.1_pinia@2.0.16
   qs: 6.11.0
   vue: 2.7.8
   vue-i18n: 8.27.2
@@ -1875,6 +1877,17 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
     dev: true
+
+  /pinia-plugin-persistedstate/2.1.1_pinia@2.0.16:
+    resolution: {integrity: sha512-HUgsU5IRtM75eAQiIqzT3p1oPEuYH1/B2ipTMU++yE+FV0LkHaBswdKXs0RMWYCmugO8s62oxLTh/N1dLNp+5A==}
+    peerDependencies:
+      pinia: ^2.0.0
+    peerDependenciesMeta:
+      pinia:
+        optional: true
+    dependencies:
+      pinia: 2.0.16_vue@2.7.8
+    dev: false
 
   /pinia/2.0.16_vue@2.7.8:
     resolution: {integrity: sha512-9/LMVO+/epny1NBfC77vnps4g3JRezxhhoF1xLUk8mZkUIxVnwfEAIRiAX8mYBTD/KCwZqnDMqXc8w3eU0FQGg==}
